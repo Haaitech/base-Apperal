@@ -1,6 +1,7 @@
 const input = document.querySelector('input[id="email"]');
 const errorImg = document.querySelector(".error-img");
 const msg = document.querySelector(".validation-msg");
+const test = null;
 
 input.addEventListener("invalid", function (e) {
 	if (e.target.validity.valueMissing) {
