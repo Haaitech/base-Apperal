@@ -1,0 +1,108 @@
+$header1: 2.5rem;
+$header2: 2rem;
+$header3: 2.5rem;
+$header4: 2rem;
+$header5: 1.4rem;
+$text: 2rem;
+$gradient1: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 90%));
+$gradient2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+$soft-red: hsl(0, 93%, 68%);
+$desaturated-red: hsl(0, 36%, 70%);
+$gray-red: hsla(0, 9%, 49%, 0.719);
+
+@mixin flex($justify, $align, $direction) {
+	display: flex;
+	justify-content: $justify;
+	align-items: $align;
+	flex-direction: $direction;
+}
+@import "global";
+@import "main";
+
+@media screen and (max-width: 1300px) {
+	.text h1 {
+		font-size: 8rem;
+	}
+}
+@media screen and (max-width: 1100px) {
+	.text h1 {
+		font-size: 6rem;
+	}
+	input {
+		width: 30rem;
+	}
+}
+
+@media screen and (max-width: 880px) {
+	.text h1 {
+		font-size: 5rem;
+	}
+	.text p {
+		font-size: 1.6rem;
+	}
+	input {
+		width: 20rem;
+	}
+	.validation-msg {
+		font-size: 1.1rem;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.text h1 {
+		font-size: 6rem;
+	}
+	input {
+		width: 30rem;
+	}
+	.cover-img {
+		display: none;
+	}
+	.logo-desktop {
+		display: none;
+	}
+	.logo-mobile {
+		display: block;
+	}
+	.text-area {
+		flex-direction: column;
+		width: 100%;
+	}
+	.text {
+		display: flex;
+		width: 90%;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+	}
+	.mobile-cover {
+		display: block;
+		width: 100%;
+	}
+	.logo-mobile {
+		padding: 4rem;
+		align-self: flex-start;
+	}
+	button {
+		width: 7rem;
+		right: -2rem;
+	}
+	.error-img {
+		right: 60px;
+	}
+}
+@media screen and (max-width: 500px) {
+	.text h1 {
+		font-size: 4rem;
+	}
+	.text p {
+		font-size: 1.4rem;
+	}
+	form {
+		width: 25rem;
+		margin: 2rem 0rem;
+	}
+	input {
+		width: 25rem;
+	}
+}

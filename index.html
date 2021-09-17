@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="" />
+		<!-- Google description of website -->
+		<meta name="robots" content="index,follow" />
+		<link rel="icon" href="./static/icon/favicon-32x32.png" />
+		<!--"optional" icon in the browser tab-->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./static/css/style.css" />
+		<!--For flask use: "{{ url_for('static', filename='css/style.css') }}" -->
+
+		<title>Coming soon | Base Apparel</title>
+	</head>
+	<body>
+		<section class="main-page">
+			<div class="text-area">
+				<img
+					id="logo "
+					class="logo-mobile"
+					src="./static/img/logo.svg"
+					alt="logo"
+				/>
+				<img src="./static/img/hero-mobile.jpg" class="mobile-cover" />
+				<div class="text">
+					<img
+						id="logo"
+						class="logo-desktop"
+						src="./static/img/logo.svg"
+						alt="logo"
+					/>
+					<h1>
+						<span>WE'RE</span> <br />
+						COMING <br />
+						SOON
+					</h1>
+					<p>
+						Hello fellow shoppers! We're currently building our new fasion
+						store. Add your email below to stay up-to-date with annaouncments
+						and our launch deals.
+					</p>
+					<div class="sign-up">
+						<form>
+							<input
+								type="email"
+								id="email"
+								placeholder="Email Address"
+								required
+							/>
+							<img class="error-img" src="./static/img/icon-error.svg" />
+							<button type="submit">
+								<img src="./static/img/icon-arrow.svg" />
+							</button>
+						</form>
+						<h5 class="validation-msg"></h5>
+					</div>
+				</div>
+			</div>
+			<div class="cover-img">
+				<img
+					id="cover-lady"
+					src="./static/img/hero-desktop.jpg"
+					alt="styleimg"
+				/>
+			</div>
+		</section>
+		<script src="./static/JS/app.js"></script>
+	</body>
+</html>

@@ -1,0 +1,52 @@
+/* Removes basic styling*/
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+body {
+	font-family: "Josefin Sans", sans-serif;
+}
+svg {
+	pointer-events: none;
+}
+
+h1 {
+	font-size: $header1;
+}
+li,
+button,
+label,
+input,
+p,
+a {
+	font-size: $text;
+}
+h2 {
+	font-size: $header2;
+}
+h3 {
+	font-size: $header3;
+}
+h4 {
+	font-size: $header4;
+}
+h5 {
+	font-size: $header5;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+button {
+	transition-duration: 0.6s;
+}
